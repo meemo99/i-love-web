@@ -1,0 +1,146 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    background-image: url(../Assets/a18a46bf-03c1-46c8-86c4-5a8716b8434c.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: Aboreto;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #34495e;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #34495e;
+}
+.info-container{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+
+.sprint{
+    width: 450px;
+    height: auto;
+    padding: 5px 12px;
+    translate: -6px -6px;
+    background: #95b2bf;
+    border: 4px double #ede1c7;
+    overflow: scroll;
+    transition: all 0.3s ease;
+    color: #ede1c7;
+}
+
+details{
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ font-family: inherit;
+ font-size: 15px;
+}
+
+details > summary{
+font-weight: 600;
+ color: #ede1c7;
+ text-transform: uppercase;
+ padding: 1.25em 2em;
+ background: #628392;
+ border: 2px solid #34495e;
+ border-radius: 0.75em;
+ -webkit-transform-style: preserve-3d;
+ transform-style: preserve-3d;
+ -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+ transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.elements{
+justify-items: end;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* From Uiverse.io by Javierrocadev */ 
+.card {
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+  background: #95b2bf;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.text {
+  flex-grow: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  font-size: .6em;
+  font-weight: 300;
+  color: rgba(240, 248, 255, 0.691);
+}
+
+.icons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 250px;
+  border-radius: 0px 0px 15px 15px;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  width: 250px;
+  height: 35px;
+  background-color: #34495e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-icon {
+  width: 25px;
+  height: 25px;
+  stroke: aliceblue;
+}
+
+.btn:hover {
+  background-color: #ede1c7;
+}
+
