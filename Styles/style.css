@@ -34,13 +34,13 @@ a:visited {
 display: flex;
 flex-direction: row;
 align-items: flex-start;
-justify-content: space-around;
+justify-content: space-evenly;
 flex-wrap: wrap;
 gap: 10px;
 }
 
 
-.sprint{
+.journalentry{
     width: 450px;
     height: auto;
     padding: 5px 12px;
@@ -50,6 +50,7 @@ gap: 10px;
     overflow: scroll;
     transition: all 0.3s ease;
     color: #ede1c7;
+
 }
 
 details{
@@ -61,6 +62,7 @@ details{
  font-family: inherit;
  font-size: 15px;
 }
+
 
 details > summary{
 font-weight: 600;
@@ -144,3 +146,6 @@ justify-items: end;
   background-color: #ede1c7;
 }
 
+.small {
+  font-size: 16px;
+}
