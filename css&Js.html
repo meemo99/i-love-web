@@ -18,3 +18,32 @@
     </header>
     <h2> JS Fundamentals</h2>
     <h2> CSS Challenges</h2>
+    <div class="info-container">
+        <article class="journalentry" id="Viewtransition">
+            <h3>View Transition</h3>
+            <p><a href="https://developer.chrome.com/docs/web-platform/view-transitions?hl=nl">View Transitions</a>
+                maakt "naadloze, visuele overgangen tussn verschillende weergaven op uw website. De overgangen wordem
+                aangestuurd door CSS-animaties
+                Een overgang in dezelfde document weergave wordt aangeroepen met een <code>if..else</code> statement:
+
+            <pre><code>if (document.startViewTransition) {} else {}</code></pre>
+
+            Een overgang tussen document(cross-document) weergaven wordt in CSS toegepast met:
+            <pre><code>@view-transition {navigation:auto;}</code></pre>
+
+            De duration van de view-Transition kan je veranderen met:
+            <pre><code>::view-transition-group()</code></pre>
+            Tussen de haakjes kan je b.v de
+            <pre><code>(*)</code></pre> selector kiezen of b.v
+            <pre><code>(:root)</code></pre>
+
+            <br>Door <code>view-transition-name</code> te gebruiken kan je elementen specifiek aanroepen voor de View
+            Transitions.
+            <pre><code>h1{view-tranitions-name: howdy}</code></pre>
+
+            Vervolgens gebruik je <code>::view-transition_group(howdy){animation-duration: }</code> om zo de duration
+            aan te passen alleen op het gekozen element.
+            </p>
+        </article>
+    </div>
+</body>
