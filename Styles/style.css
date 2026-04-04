@@ -156,3 +156,19 @@ details>summary {
 .small {
   font-size: 16px;
 }
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(*) {
+  animation-duration: 0.25s;
+}
+
+h1 {
+  view-transition-name: howdy;
+}
+
+::view-transition-group(howdy) {
+  animation-duration: 3s
+}
